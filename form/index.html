@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>HTML FORM</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #fec107;
+    padding: 0 10px;
+}
+
+.container {
+   max-width: 500px;
+   width: 100%;
+   background: #fff;
+   margin: 20px auto;
+   padding: 30px;
+   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+.container .title {
+    font-size: 24px;
+    font-weight: 700px;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container form .input_field label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.container form .input_field input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3 ease;  
+}
+
+.container form .input_field input:focus{
+    border: 1px solid #fec107;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.container form .input_field:last-child{
+    margin-bottom: 0;
+}
+
+.btn:hover{
+    background: #ffd658;
+}
+
+@media (max-width: 420px)  {
+    .container form .input_field{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+    </style>
+</head>
+<body>
+   
+
+    <div class="container">
+
+        <div class="title">
+            <h3>HTML, CSS and JavaScript Form.</h3>
+        </div>
+
+        <form action="" id="form">
+    
+            <div class="input_field">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="first-name" placeholder="Enter your first name . . .">
+            </div>
+
+            <div class="input_field">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="last-name" placeholder="Enter your last name . . .">
+            </div>
+
+            <div class="input_field">
+                <label for="email">Email Adderess</label>
+                <input type="email" id="email" name="email" placeholder="Enter your valid email address. . . ">
+            </div>
+
+            <div class="input_field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter valid 10 digit phone number. . .">
+            </div>
+
+            <div class="input_field">
+                <input type="submit" value="Submite" class="btn" onclick="validate()">
+            </div>
+        </form>
+    </div>
+
+<script>
+        var form      = document.getElementById("form");
+    var firstName = document.getElementById("fname");
+    var lastName  = document.getElementById("lname");
+    var email     = document.getElementById("email");
+    var phone     = document.getElementById("phone");
+    var input     = document.getElementsByTagName("input")
+
+
+  function validate(){
+
+        if(fname.value.trim()=="" || lname.value.trim()==""){
+            alert("Value can't be blank");
+            return false;
+        }
+       
+        else{
+            alert("SUbmite succsecful");
+            true;
+
+        }
+
+        var regx = /^([a-z 0-9\.-])+@([a-z0-9]+).([a-z]{2,8})?$/;
+        if(regx.test(email)){
+            document.getElementById("email").innerHTML="valid";
+        }
+        else{
+            document.getElementById("email").innerHTML="invalid";
+        }
+
+    }
+ 
+</script>
+
+</body>
+</html>
