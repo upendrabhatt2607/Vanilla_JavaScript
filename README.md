@@ -8,7 +8,7 @@ I have created 10+ projects that helped my coding skills.
 ### 5: Company Website ->  [CLick here for DEMO](https://upendrabhatt2607.github.io/Vanilla_JavaScript/Company_Website/)
 ### 6: QR Code Generator ->  [CLick here for DEMO](https://upendrabhatt2607.github.io/Vanilla_JavaScript/QR_Code_Generator/)
 ### 7: Animated Accordion ->  [CLick here for DEMO](https://upendrabhatt2607.github.io/Vanilla_JavaScript/Animated_Accordion/)
-### 8: form ->  [CLick here for DEMO](https://upendrabhatt2607.github.io/Vanilla_JavaScript/form/)
+### 8: form ->  [CLick here for DEMO](https://upendrabhatt2607.github.io/Vanilla_JavaScript/form/) 
 
 
 
